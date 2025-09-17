@@ -188,3 +188,22 @@ const btn10 = document.createElement("button");
 btn10.innerText = "Remove duplicates";
 btn10.onclick = () => showResult([1, 2, 2, 3, 3, 4,4,4,4,3,5,6,7,8], removeDuplicates([1, 2, 2, 3, 3, 4,4,4,4,3,5,6,7,8]), "Removed duplicates");
 buttonsContainer.appendChild(btn10);
+
+
+// 11. Find maximum
+function getMax(arr) {
+  let max = arr[0]; // assume first is max
+  for (let i = 1; i < getLength(arr); i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+
+// --- Add Button ---
+const btn11 = document.createElement("button");
+btn11.innerText = "Find maximum number";
+btn11.onclick = () => showResult(numbers, getMax(numbers), "Found the largest number in array");
+buttonsContainer.appendChild(btn11);
+
