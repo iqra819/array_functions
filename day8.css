@@ -21,7 +21,7 @@ button {
     transition: background 0.2s;
 }
 button:hover {
-    background: #0056b3;
+    background: #205185;
 }
 #output {
     background: #fff;
